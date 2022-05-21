@@ -11,5 +11,6 @@ router.post('/login',[LoginValidation, handleLogin] ,AuthController.Login)
 router.post('/verify',AuthController.VerifyOtp)
 router.post('/verifyMOtp',AuthController.forgotPasswordsendOTP)
 router.put('/verifyMOtp',AuthController.UpdateForgotPassword)
+router.get('/checking', AuthController.Checking)
 
 module.exports = router

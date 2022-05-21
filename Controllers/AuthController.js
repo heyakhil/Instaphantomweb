@@ -187,11 +187,16 @@ const UpdateForgotPassword = async(req, res) =>{
   }
 }
 
+const Checking = async(req, res) => {
+  res.send("Yes it is working")
+}
+
 module.exports = {
   Register,
   ResendOtp,
   Login,
   VerifyOtp,
   forgotPasswordsendOTP,
-  UpdateForgotPassword
+  UpdateForgotPassword,
+  Checking
 };
