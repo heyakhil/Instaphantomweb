@@ -48,7 +48,7 @@ const Steps = () => {
           }}
         >
           <Box
-            pl={3}
+            pl={2}
             sx={{
               display: "flex",
               flexWrap: "wrap",
