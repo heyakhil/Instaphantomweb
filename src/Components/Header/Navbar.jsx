@@ -3,7 +3,7 @@ import style from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import logo from "../Images/logo.png";
 const Navbar = () => {
   const [isMobile, setisMobile] = useState(false);
 
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={style.navbar}>
-        <h3 className={style.logo}> Instaphantom</h3>
+        <h3 className={style.logo}><img src={logo} style={{width:"300px",height:"300px"}} alt='logo'></img></h3>
 
         <ul
           className={isMobile ? style.mobilelinks : style.navlinks}
@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div style={{ margin: "20px" }}>
+        <div style={{ marginRight: "20px" }}>
           <button
             onClick={() => setisMobile(!isMobile)}
             className={style.mobileMenuIcon}
